@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calendar</title>
+    <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css?ver=1.0.3">
+    
+</head>
+<body>
+
+
+
+<div class="all-wrapper">
+    
+    <div class="topbar">
+        <div class="mx-5">
+            <div class="row">
+                <li><h1 class="display-4 text-primary mb-0"><small>Calendar</small></h1></li>
+                <li class="angle p-3 ">
+                    <span  onclick="PreYearFunc()"  class="fa fa-angle-left"></span>
+                    <span  onclick="NextYearFunc()"  class="fa fa-angle-right"></span>
+                    <span id="yearShow"></span>
+                    <span  id="presentYear" onclick="presentYearFunction()">Present Year</span>
+                </li>
+                <li class="p-3" >
+                    <span class="fa fa-cog " style="font-size: 30;"></span>
+                    <span class="fa fa-carod-down"></span>
+                </li>
+
+                <li class="p-3"> <a href="#" class="fa fa-bars"></a></li>
+
+            </div>
+        </div>
+    </div>
+
+
+<div class="wrapper">
+    <div class="left">
+        <div class="left-content">
+            <span class="fa fa-bars text-light"></span>
+            <div class=" text-right">
+                <span class="pl-3 float-left text-light" style="cursor: pointer;">+ Add New Event</span>
+                <span onclick="prevMonth()" class="fa fa-long-arrow-up p-3"></span>
+                <span onclick="nextMonth()" class="fa fa-long-arrow-down p-3"></span>
+            </div>
+            <div class="d-inline" id="month"></div>
+        </div>
+    </div>
+    <div class="main-content">
+        <div id="calendar"></div>
+    </div>
+
+</div>
+</div>
+
+
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/updateCalendar.js?ver=1.0.5"></script>
+<script src="js/single-cal.js?ver=1.0.3"></script>
+</body>
+</html>
